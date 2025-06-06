@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <TitleGenerator />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TitleGenerator from './components/TitleGenerator.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TitleGenerator
   }
-}
+};
 </script>
+
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: 
+    radial-gradient(#e5e7eb 1px, transparent 1px),
+    linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+  background-size: 20px 20px, cover;
+  background-position: center;
 }
+
 </style>
